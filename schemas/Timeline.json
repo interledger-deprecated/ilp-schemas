@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Timeline.json",
   "title": "Timeline",
   "description": "Timeline of the transfer's state transitions",
   "type": "object",

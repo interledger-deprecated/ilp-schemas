@@ -1,6 +1,3 @@
 node_modules/
 integration-test/
-/coverage/
 /npm-debug.log
-/jsdoc-out/
-/web/

@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Base64.json",
   "title": "Base64",
   "description": "Base64 string",
   "type": "string",

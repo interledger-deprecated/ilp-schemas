@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "Currency.json",
   "title": "Currency",
   "description": "An ISO currency code",
   "type": "string",

@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Payment.json",
   "title": "Payment",
   "description": "A cross-ledger transfer",
   "type": "object",

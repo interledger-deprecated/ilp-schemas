@@ -1,7 +1,7 @@
 {
-  "name": "five-bells-shared",
-  "version": "26.1.0",
-  "description": "Shared components for Five Bells projects.",
+  "name": "ilp-schemas",
+  "version": "1.0.0",
+  "description": "Various JSON schemas for ILP-related protocols",
   "keywords": [
     "interledger",
     "five-bells",
@@ -10,59 +10,30 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "istanbul test -- _mocha",
-    "jsdoc": "jsdoc -R README.md -c jsdoc.json lib/* && cp -r docs jsdoc-out",
     "integration": "integration-loader && integration all",
-    "bump": "./bin/bump.sh",
-    "ci-publish": "./bin/ci-publish.sh",
-    "report-coverage": "codecov"
-  },
-  "bin": {
-    "version-bump": "./bin/bump.sh",
-    "ci-publish": "./bin/ci-publish.sh"
+    "test": "ajv compile -s schemas/\\*.json -r schemas/\\*.json"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:interledgerjs/five-bells-shared.git"
+    "url": "git@github.com:interledgerjs/ilp-schemas.git"
   },
-  "author": "Ripple <info@ripple.com>",
+  "author": "Interledger Team <info@interledger.org>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/interledgerjs/five-bells-shared/issues"
+    "url": "https://github.com/interledgerjs/ilp-schemas/issues"
   },
-  "homepage": "https://github.com/interledgerjs/five-bells-shared",
-  "dependencies": {
-    "ajv": "^4.9.0",
-    "canonical-json": "0.0.4",
-    "co": "^4.1.0",
-    "co-body": "^5.0.2",
-    "co-defer": "^1.0.0",
-    "lodash": "^4.6.1",
-    "mag-colored-output": "^1.0.0",
-    "mag-format-message": "^0.1.1",
-    "path-to-regexp": "^1.2.0",
-    "retry-as-promised": "^2.0.1",
-    "through2": "^2.0.1",
-    "tweetnacl": "^0.14.3"
-  },
-  "peerDependencies": {
-    "mag": "^0.9.1",
-    "mag-hub": "^0.1.1"
-  },
+  "homepage": "https://github.com/interledgerjs/ilp-schemas",
+  "dependencies": {},
+  "peerDependencies": {},
   "devDependencies": {
-    "chai": "^3.2.0",
-    "codecov": "^1.0.1",
-    "eslint": "^3.11.0",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "five-bells-integration-test-loader": "^1.0.1",
-    "interledger-jsdoc-template": "^2.0.0",
-    "istanbul": "^0.4.5",
-    "jsdoc": "git+https://github.com/jsdoc3/jsdoc.git",
-    "mocha": "^3.2.0",
-    "sinon": "^1.15.4",
-    "sinon-chai": "^2.8.0"
+    "ajv-cli": "^2.1.0",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "five-bells-integration-test-loader": "^1.4.0"
   },
   "config": {
     "five-bells-integration-test-loader": {

@@ -1,21 +1,43 @@
-exports.Config = require('./lib/config')
-exports.Model = require('./lib/model')
-exports.PersistentModelMixin = require('./lib/persistent-model-mixin')
-exports.PersistentKnexModelMixin = require('./lib/persistent-knex-model-mixin')
-exports.UriManager = require('./lib/uri-manager').UriManager
-exports.Validator = require('./lib/validator')
-exports.Log = require('./lib/log')
-exports.DB = require('./lib/db')
-exports.NotificationScheduler = require('./lib/notificationScheduler')
+'use strict'
 
-exports.BaseError = require('./errors/base-error')
-exports.AlreadyExistsError = require('./errors/already-exists-error')
-exports.InvalidBodyError = require('./errors/invalid-body-error')
-exports.InvalidModificationError = require('./errors/invalid-modification-error')
-exports.InvalidUriParameterError = require('./errors/invalid-uri-parameter-error')
-exports.NotFoundError = require('./errors/not-found-error')
-exports.UnauthorizedError = require('./errors/unauthorized-error')
-exports.UnmetConditionError = require('./errors/unmet-condition-error')
-exports.UnprocessableEntityError = require('./errors/unprocessable-entity-error')
-exports.TransferStateDictionary = require('./lib/transferStateDictionary')
+const schemas = {
+  Account: require('./schemas/Account.json'),
+  Amount: require('./schemas/Amount.json'),
+  Base64: require('./schemas/Base64.json'),
+  Base64URL: require('./schemas/Base64URL.json'),
+  ConditionFulfillment: require('./schemas/ConditionFulfillment.json'),
+  Condition: require('./schemas/Condition.json'),
+  Currency: require('./schemas/Currency.json'),
+  Date: require('./schemas/Date.json'),
+  Ed25519SignedMessage: require('./schemas/Ed25519SignedMessage.json'),
+  EventId: require('./schemas/EventId.json'),
+  Fulfillment: require('./schemas/Fulfillment.json'),
+  FundsTemplate: require('./schemas/FundsTemplate.json'),
+  GenericTransfer: require('./schemas/GenericTransfer.json'),
+  Identifier: require('./schemas/Identifier.json'),
+  IlpAddress: require('./schemas/IlpAddress.json'),
+  IlpPayment: require('./schemas/IlpPayment.json'),
+  Iri: require('./schemas/Iri.json'),
+  Message: require('./schemas/Message.json'),
+  NonNegativeDuration: require('./schemas/NonNegativeDuration.json'),
+  Notification: require('./schemas/Notification.json'),
+  Payment: require('./schemas/Payment.json'),
+  PaymentTemplate: require('./schemas/PaymentTemplate.json'),
+  PublicKeyEC: require('./schemas/PublicKeyEC.json'),
+  PublicKeyRSA: require('./schemas/PublicKeyRSA.json'),
+  RejectionMessage: require('./schemas/RejectionMessage.json'),
+  Routes: require('./schemas/Routes.json'),
+  RpcRequest: require('./schemas/RpcRequest.json'),
+  RpcResponse: require('./schemas/RpcResponse.json'),
+  Sha256SignedMessage: require('./schemas/Sha256SignedMessage.json'),
+  SignedMessageTemplate: require('./schemas/SignedMessageTemplate.json'),
+  Subscription: require('./schemas/Subscription.json'),
+  Timeline: require('./schemas/Timeline.json'),
+  Transfer: require('./schemas/Transfer.json'),
+  TransferState: require('./schemas/TransferState.json'),
+  TransferStateReceipt: require('./schemas/TransferStateReceipt.json'),
+  TransferTemplate: require('./schemas/TransferTemplate.json'),
+  Uuid: require('./schemas/Uuid.json')
+}
 
+module.exports = schemas

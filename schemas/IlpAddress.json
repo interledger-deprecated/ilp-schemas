@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "IlpAddress.json",
   "title": "IlpAddress",
   "description": "The packet's final destination",
   "type": "string",

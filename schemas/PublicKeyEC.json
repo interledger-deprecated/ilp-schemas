@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "PublicKeyEC.json",
   "title": "PublicKeyEC",
   "description": "The public key for an ECDSA JSON Cleartext Signature",
   "type": "object",
@@ -18,7 +19,6 @@
     },
     "x": {
       "description": "EC curve point X.",
-      "type": "string",
       "$ref": "Base64URL.json"
     },
     "y": {

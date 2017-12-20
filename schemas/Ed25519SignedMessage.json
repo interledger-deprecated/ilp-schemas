@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Ed25519SignedMessage.json",
   "title": "Ed25519SignedMessage",
   "description": "Signed ed25519 message",
   "type": "object",

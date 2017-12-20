@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "NonNegativeDuration.json",
   "title": "NonNegativeDuration",
   "description": "A precise non-negative duration",
   "type": "string",

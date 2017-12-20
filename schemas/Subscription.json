@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Subscription.json",
   "title": "Subscription",
   "description": "A registration for wanting to receive notifications about resource changes.",
   "type": "object",

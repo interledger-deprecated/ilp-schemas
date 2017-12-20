@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "SignedMessageTemplate.json",
   "title": "SignedMessageTemplate",
   "description": "Object representing a signed message or message to be signed",
   "type": "object",

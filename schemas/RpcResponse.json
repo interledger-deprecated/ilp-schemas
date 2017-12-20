@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "RpcResponse.json",
   "title": "RpcResponse",
   "description": "A JSON RPC response",
   "type": "object",

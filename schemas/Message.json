@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Message.json",
   "title": "Message",
   "description": "a five-bells-ledger message",
   "type": "object",

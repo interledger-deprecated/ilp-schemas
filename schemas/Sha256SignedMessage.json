@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Sha256SignedMessage.json",
   "title": "Sha256SignedMessage",
   "description": "Signed sha256 message",
   "type": "object",

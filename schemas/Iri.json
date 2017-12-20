@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "Iri.json",
   "title": "Iri",
   "description": "Internationalized Resource Identifier (IRI)",
   "type": "string",

@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Notification.json",
   "title": "Notification",
   "description": "A notification sent by a ledger",
   "type": "object",

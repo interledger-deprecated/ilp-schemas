@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "ConditionFulfillment.json",
   "title": "ConditionFulfillment",
   "description": "Proof of condition completion",
   "type": "string",

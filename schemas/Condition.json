@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Condition.json",
   "title": "Condition",
   "description": "A fingerprint of a future cryptographically proven event",
   "type": "string",

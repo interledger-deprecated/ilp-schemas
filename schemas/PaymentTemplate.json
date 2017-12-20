@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "PaymentTemplate.json",
   "title": "PaymentTemplate",
   "description": "A template for a cross-ledger transfer that can have some payment fields missing",
   "type": "object",

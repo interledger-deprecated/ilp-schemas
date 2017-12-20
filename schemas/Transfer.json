@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Transfer.json",
   "title": "Transfer",
   "description": "A ledger-local transfer of funds",
   "type": "object",

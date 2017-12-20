@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "Account.json",
   "title": "Account",
   "description": "An account on a ledger",
   "type": "object",

@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "RejectionMessage.json",
   "title": "RejectionMessage",
   "description": "An error describing a transfer's rejection",
   "type": "object",
