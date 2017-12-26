@@ -27,6 +27,7 @@ const schemas = {
   PublicKeyRSA: require('./schemas/PublicKeyRSA.json'),
   RejectionMessage: require('./schemas/RejectionMessage.json'),
   Routes: require('./schemas/Routes.json'),
+  RoutingUpdate: require('./schemas/RoutingUpdate.json'),
   RpcRequest: require('./schemas/RpcRequest.json'),
   RpcResponse: require('./schemas/RpcResponse.json'),
   Sha256SignedMessage: require('./schemas/Sha256SignedMessage.json'),
