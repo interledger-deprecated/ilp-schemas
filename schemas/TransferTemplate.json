@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$schema": "http://json-schema.org/draft-06/schema",
   "id": "TransferTemplate.json",
   "title": "TransferTemplate",
   "description": "A template for ledger-local transfer of funds that can be missing some transfer fields",

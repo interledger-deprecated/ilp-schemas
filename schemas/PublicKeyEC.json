@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$schema": "http://json-schema.org/draft-06/schema",
   "id": "PublicKeyEC.json",
   "title": "PublicKeyEC",
   "description": "The public key for an ECDSA JSON Cleartext Signature",

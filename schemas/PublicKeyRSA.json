@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$schema": "http://json-schema.org/draft-06/schema",
   "id": "PublicKeyRSA.json",
   "title": "PublicKeyRSA",
   "description": "The public key for an RSA JSON Cleartext Signature",

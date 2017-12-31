@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$schema": "http://json-schema.org/draft-06/schema",
   "id": "FundsTemplate.json",
   "title": "FundsTemplate",
   "description": "A defined quantity of an asset optionally located on a specified ledger.",
