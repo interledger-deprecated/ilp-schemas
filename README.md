@@ -26,7 +26,7 @@ const Ajv = require('ajv')
 const ajv = new Ajv()
 
 // add all schemas
-Object.values(schemas).forEach(ajv.addSchema.bind(ajv))
+Object.keys(schemas).forEach(name => ajv.addSchema(schemas[name], name))
 
 // validate something
 const isValid = ajv.validate('Transfer.json', myTransfer)
