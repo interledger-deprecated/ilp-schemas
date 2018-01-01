@@ -2,47 +2,35 @@
   "$schema": "http://json-schema.org/draft-06/schema",
   "id": "Routes.json",
   "title": "Routes",
-  "description": "a list of routes from a connector",
+  "description": "A list of routes from a connector",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
-      "source_ledger": {"$ref": "IlpAddress.json"},
-      "destination_ledger": {"$ref": "IlpAddress.json"},
       "min_message_window": {
         "type": "number",
         "minimum": 0,
         "description": "the minimum difference (in seconds) between the source and destination transfers' expiries"
       },
-      "source_account": {
+      "prefix": {
         "$ref": "IlpAddress.json",
-        "description": "the connector's account on source_ledger"
-      },
-      "destination_account": {
-        "$ref": "IlpAddress.json",
-        "description": "the connector's account on destination_ledger; (this property is only for local routes)"
+        "description": "ILP address prefix that this route advertisement covers."
       },
       "points": {
         "$ref": "Base64.json",
-        "description": "a list of points describing the exchange rate curve"
+        "description": "A list of points describing the exchange rate curve (deprecated)"
       },
-      "paths": {
+      "path": {
         "type": "array",
         "items": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+          "type": "string"
         },
-        "description": "a list of alternative paths from nextLedger and destinationLedger (each path being a list of ledgers)"
+        "description": "A list of ILP addresses of the connectors between the destination prefix and the advertising peer, exclusively. The list is ordered from closest to the destination first to furthest from the destination last."
       }
     },
     "required": [
-      "source_ledger",
-      "destination_ledger",
-      "min_message_window",
-      "source_account"
-    ],
-    "additionalProperties": false
+      "prefix",
+      "path"
+    ]
   }
 }
